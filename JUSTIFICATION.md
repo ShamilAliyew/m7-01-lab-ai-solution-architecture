@@ -28,6 +28,7 @@ Inference will run entirely in the **Cloud** (specifically utilizing ephemeral c
 Every architecture must balance these three competing forces. For this system, we have configured the dials as follows:
 
 
+```mermaid
 graph TD
     %% Triangle Vertices
     L[LATENCY <br> Speed / Delay] <--> T[THROUGHPUT <br> Volume / Capacity]
@@ -43,7 +44,6 @@ graph TD
     style T fill:#d5f9de,stroke:#27ae60,stroke-width:2px
     style C fill:#d5e8f9,stroke:#2c3e50,stroke-width:2px
     style M fill:#ffffff,stroke:#bdc3c7,stroke-width:1px
-
 
 
 1. **Optimize - Throughput:** The system must process **~120,000 accounts** concurrently. The infrastructure is optimized to stream large tables from the database into the model efficiently using vectorized chunks.
