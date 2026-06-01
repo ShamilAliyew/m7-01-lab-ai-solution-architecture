@@ -17,3 +17,4 @@ We decided to implement a scheduled **Weekly Batch Inference Job** that executes
 
 ## Revisit if
 We will reopen this decision if the product organization launches an automated, real-time in-app customer retention widget that requires instant risk scores to trigger immediate in-product interventions.
+
